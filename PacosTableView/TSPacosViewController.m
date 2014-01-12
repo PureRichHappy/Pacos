@@ -8,6 +8,7 @@
 
 #import "TSPacosViewController.h"
 #import "TSPacosCell.h"
+#import "TSButtonViewController.h"
 
 @interface TSPacosViewController ()
 
@@ -82,14 +83,17 @@
     // カスタムCellの呼び出し
     static NSString *CellIdentifier = @"TSPacosCell";
     TSPacosCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UIViewController *vc = [self.delegate setContainerViewController:self];
     if (cell == nil) {
         cell = [[TSPacosCell alloc] initWithFrame:CGRectMake(0,
                                                              0,
                                                              CGRectGetHeight(self.tableView.frame),
                                                              CGRectGetWidth(self.tableView.frame))
-                                   containerScale:self.containerScale];
+                                   containerScale:self.containerScale
+                                     contentsView:vc.view];
     }
-    
+    [self addChildViewController:vc];
+
     return cell;
 }
 
@@ -125,6 +129,14 @@
         float distance = [self.tableView getDistance:cell];
         [cell setContainerScale:distance];
     }
+}
+
+#pragma mark - origin method
+
+- (CGSize)getCellContainerViewSize
+{
+    return CGSizeMake(CGRectGetWidth(self.view.frame) * self.containerScale,
+                      CGRectGetHeight(self.view.frame) * self.containerScale);
 }
 
 @end

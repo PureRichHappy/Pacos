@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSPacosViewController.h"
 
-@interface TSViewController : UIViewController
+@interface TSViewController : UIViewController <TSPacosViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end

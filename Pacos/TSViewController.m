@@ -7,7 +7,7 @@
 //
 
 #import "TSViewController.h"
-#import "TSPacosViewController.h"
+#import "TSButtonViewController.h"
 
 @interface TSViewController ()
 
@@ -23,6 +23,7 @@
                                                                                         0,
                                                                                         CGRectGetWidth(self.containerView.frame),
                                                                                         CGRectGetHeight(self.containerView.frame))];
+    vc.delegate = self;
     vc.items = @[@1, @2, @3, @4, @5, @6];
     // cellに表示されるviewのサイズ（TSPacosViewControllerのviewサイズに対する割合）指定
     vc.containerScale = 0.9;
@@ -34,6 +35,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+# pragma mark - pacos delegate
+
+- (UIViewController *)setContainerViewController:(TSPacosViewController *)pacosViewController
+{
+    TSButtonViewController *buttonVc = [self.storyboard instantiateViewControllerWithIdentifier:@"button"];
+    return buttonVc;
 }
 
 @end

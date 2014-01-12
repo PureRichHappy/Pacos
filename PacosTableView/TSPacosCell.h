@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TSPacosCell : UITableViewCell
-@property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, strong) UIView *onContentsView;
 @property (nonatomic, assign) CGRect containerFrame;
 
-- (id)initWithFrame:(CGRect)frame containerScale:(float)scale;
+- (id)initWithFrame:(CGRect)frame containerScale:(float)scale contentsView:(UIView*)contentsView;
 - (void)setContainerScale:(float)val;
 
 @end

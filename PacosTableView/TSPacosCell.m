@@ -10,7 +10,7 @@
 
 @implementation TSPacosCell
 
-- (id)initWithFrame:(CGRect)frame containerScale:(float)scale
+- (id)initWithFrame:(CGRect)frame containerScale:(float)scale contentsView:(UIView*)contentsView
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -25,12 +25,12 @@
                                          0,
                                          CGRectGetHeight(frame) * scale,
                                          CGRectGetWidth(frame) * scale);
-        self.containerView = [[UIView alloc] init];
-        self.containerView.backgroundColor = [UIColor whiteColor];
-        self.containerView.frame = self.containerFrame;
-        self.containerView.center = CGPointMake(CGRectGetHeight(frame) / 2,
+        self.onContentsView = contentsView;
+        self.onContentsView.frame = self.containerFrame;
+        self.onContentsView.center = CGPointMake(CGRectGetHeight(frame) / 2,
                                                 CGRectGetWidth(frame) / 2);
-        [self addSubview:self.containerView];
+        [self addSubview:self.onContentsView];
+
     }
     
     return self;
@@ -50,12 +50,12 @@
 - (void)setContainerScale:(float)val
 {
     float scale = [self scaleForCellDistance:val];
-    CGPoint center = self.containerView.center;
-    self.containerView.layer.frame = CGRectMake(self.containerView.frame.origin.x,
-                                                self.containerView.frame.origin.y,
+    CGPoint center = self.onContentsView.center;
+    self.layer.frame = CGRectMake(self.onContentsView.frame.origin.x,
+                                                self.onContentsView.frame.origin.y,
                                                 CGRectGetWidth(self.containerFrame) * scale,
                                                 CGRectGetHeight(self.containerFrame) * scale);
-    self.containerView.layer.position = center;
+    self.layer.position = center;
 }
 
 # pragma mark - 評価関数
