@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TSPacosCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, assign) CGRect containerFrame;
 
 - (void)setContainerScale:(float)val;
 
