@@ -7,7 +7,7 @@
 //
 
 #import "TSViewController.h"
-#import "TSButtonViewController.h"
+#import "TSContentsViewController.h"
 
 @interface TSViewController ()
 
@@ -24,7 +24,13 @@
                                                                                         CGRectGetWidth(self.containerView.frame),
                                                                                         CGRectGetHeight(self.containerView.frame))];
     vc.delegate = self;
-    vc.items = @[@1, @2, @3, @4, @5, @6];
+    self.items = @[@{@"title" : @"1"},
+                   @{@"title" : @"2"},
+                   @{@"title" : @"3"},
+                   @{@"title" : @"4"},
+                   @{@"title" : @"5"},
+                   @{@"title" : @"6"}];
+    vc.items = self.items;
     // cellに表示されるviewのサイズ（TSPacosViewControllerのviewサイズに対する割合）指定
     vc.containerScale = 0.9;
     [self addChildViewController:vc];
@@ -39,10 +45,11 @@
 
 # pragma mark - pacos delegate
 
-- (UIViewController *)setContainerViewController:(TSPacosViewController *)pacosViewController
+- (UIViewController *)setContainerViewController:(TSPacosViewController *)pacosViewController indexPath:(NSIndexPath *)indexPath
 {
-    TSButtonViewController *buttonVc = [self.storyboard instantiateViewControllerWithIdentifier:@"button"];
-    return buttonVc;
+    TSContentsViewController *contentsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contents"];
+    contentsViewController.item = self.items[indexPath.row];
+    return contentsViewController;
 }
 
 @end

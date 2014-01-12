@@ -11,7 +11,7 @@
 		1F6CE02A18826B1F00311BF6 /* TSPacosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02518826B1F00311BF6 /* TSPacosCell.m */; };
 		1F6CE02B18826B1F00311BF6 /* TSPacosTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02718826B1F00311BF6 /* TSPacosTableView.m */; };
 		1F6CE02C18826B1F00311BF6 /* TSPacosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02918826B1F00311BF6 /* TSPacosViewController.m */; };
-		1F6CE02F1882731200311BF6 /* TSButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02E1882731200311BF6 /* TSButtonViewController.m */; };
+		1F6CE03218828B7500311BF6 /* TSContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE03118828B7500311BF6 /* TSContentsViewController.m */; };
 		3A2D4443187E8FA6004813A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4442187E8FA6004813A3 /* Foundation.framework */; };
 		3A2D4445187E8FA6004813A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4444187E8FA6004813A3 /* CoreGraphics.framework */; };
 		3A2D4447187E8FA6004813A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4446187E8FA6004813A3 /* UIKit.framework */; };
@@ -46,8 +46,8 @@
 		1F6CE02718826B1F00311BF6 /* TSPacosTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosTableView.m; sourceTree = "<group>"; };
 		1F6CE02818826B1F00311BF6 /* TSPacosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosViewController.h; sourceTree = "<group>"; };
 		1F6CE02918826B1F00311BF6 /* TSPacosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosViewController.m; sourceTree = "<group>"; };
-		1F6CE02D1882731200311BF6 /* TSButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSButtonViewController.h; sourceTree = "<group>"; };
-		1F6CE02E1882731200311BF6 /* TSButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSButtonViewController.m; sourceTree = "<group>"; };
+		1F6CE03018828B7500311BF6 /* TSContentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSContentsViewController.h; sourceTree = "<group>"; };
+		1F6CE03118828B7500311BF6 /* TSContentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSContentsViewController.m; sourceTree = "<group>"; };
 		3A2D443F187E8FA6004813A3 /* Pacos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2D4442187E8FA6004813A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A2D4444187E8FA6004813A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,8 +145,8 @@
 				3A2D4449187E8FA6004813A3 /* Supporting Files */,
 				1F3E8B4A18819CDA0002DA03 /* TSViewController.h */,
 				1F3E8B4B18819CDA0002DA03 /* TSViewController.m */,
-				1F6CE02D1882731200311BF6 /* TSButtonViewController.h */,
-				1F6CE02E1882731200311BF6 /* TSButtonViewController.m */,
+				1F6CE03018828B7500311BF6 /* TSContentsViewController.h */,
+				1F6CE03118828B7500311BF6 /* TSContentsViewController.m */,
 			);
 			path = Pacos;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2D444F187E8FA6004813A3 /* main.m in Sources */,
-				1F6CE02F1882731200311BF6 /* TSButtonViewController.m in Sources */,
+				1F6CE03218828B7500311BF6 /* TSContentsViewController.m in Sources */,
 				3A2D4453187E8FA6004813A3 /* TSAppDelegate.m in Sources */,
 				1F6CE02C18826B1F00311BF6 /* TSPacosViewController.m in Sources */,
 				1F6CE02A18826B1F00311BF6 /* TSPacosCell.m in Sources */,

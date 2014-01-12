@@ -8,7 +8,6 @@
 
 #import "TSPacosViewController.h"
 #import "TSPacosCell.h"
-#import "TSButtonViewController.h"
 
 @interface TSPacosViewController ()
 
@@ -83,7 +82,8 @@
     // カスタムCellの呼び出し
     static NSString *CellIdentifier = @"TSPacosCell";
     TSPacosCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    UIViewController *vc = [self.delegate setContainerViewController:self];
+    UIViewController *vc = [self.delegate setContainerViewController:self
+                                                           indexPath:indexPath];
     if (cell == nil) {
         cell = [[TSPacosCell alloc] initWithFrame:CGRectMake(0,
                                                              0,

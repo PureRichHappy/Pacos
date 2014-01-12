@@ -50,12 +50,10 @@
 - (void)setContainerScale:(float)val
 {
     float scale = [self scaleForCellDistance:val];
-    CGPoint center = self.onContentsView.center;
-    self.layer.frame = CGRectMake(self.onContentsView.frame.origin.x,
-                                                self.onContentsView.frame.origin.y,
-                                                CGRectGetWidth(self.containerFrame) * scale,
-                                                CGRectGetHeight(self.containerFrame) * scale);
-    self.layer.position = center;
+    CGAffineTransform t = CGAffineTransformScale(CGAffineTransformMakeTranslation(0, 0),
+                                                  scale,
+                                                  scale);
+    self.onContentsView.transform = t;
 }
 
 # pragma mark - 評価関数

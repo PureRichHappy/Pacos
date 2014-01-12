@@ -24,6 +24,6 @@
 
 @protocol TSPacosViewControllerDelegate <NSObject>
 
-- (UIViewController *)setContainerViewController:(TSPacosViewController *)pacosViewController;
+- (UIViewController *)setContainerViewController:(TSPacosViewController *)pacosViewController indexPath:(NSIndexPath *)indexPath;
 
 @end

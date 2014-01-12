@@ -11,5 +11,6 @@
 
 @interface TSViewController : UIViewController <TSPacosViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (nonatomic, assign) NSArray *items;
 
 @end
