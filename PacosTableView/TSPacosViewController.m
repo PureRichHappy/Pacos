@@ -86,7 +86,8 @@
         cell = [[TSPacosCell alloc] initWithFrame:CGRectMake(0,
                                                              0,
                                                              CGRectGetHeight(self.tableView.frame),
-                                                             CGRectGetWidth(self.tableView.frame))];
+                                                             CGRectGetWidth(self.tableView.frame))
+                                   containerScale:self.containerScale];
     }
     
     return cell;

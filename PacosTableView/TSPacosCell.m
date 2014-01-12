@@ -10,7 +10,7 @@
 
 @implementation TSPacosCell
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame containerScale:(float)scale
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -21,12 +21,15 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
         // 実際に表示されるviewの設定
-        self.containerView = [[UIView alloc] initWithFrame:frame];
+        self.containerFrame = CGRectMake(0,
+                                         0,
+                                         CGRectGetHeight(frame) * scale,
+                                         CGRectGetWidth(frame) * scale);
+        self.containerView = [[UIView alloc] init];
         self.containerView.backgroundColor = [UIColor whiteColor];
-        self.containerView.frame = CGRectMake(0, 0, CGRectGetHeight(frame), CGRectGetWidth(frame));
-        self.containerFrame = self.containerView.frame;
-        self.containerView.center = CGPointMake(CGRectGetWidth(self.containerView.frame) / 2,
-                                                CGRectGetHeight(self.containerView.frame) / 2);
+        self.containerView.frame = self.containerFrame;
+        self.containerView.center = CGPointMake(CGRectGetHeight(frame) / 2,
+                                                CGRectGetWidth(frame) / 2);
         [self addSubview:self.containerView];
     }
     

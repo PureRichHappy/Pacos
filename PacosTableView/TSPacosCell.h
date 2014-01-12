@@ -12,6 +12,7 @@
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, assign) CGRect containerFrame;
 
+- (id)initWithFrame:(CGRect)frame containerScale:(float)scale;
 - (void)setContainerScale:(float)val;
 
 @end

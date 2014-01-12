@@ -24,6 +24,8 @@
                                                                                         CGRectGetWidth(self.containerView.frame),
                                                                                         CGRectGetHeight(self.containerView.frame))];
     vc.items = @[@1, @2, @3, @4, @5, @6];
+    // cellに表示されるviewのサイズ（TSPacosViewControllerのviewサイズに対する割合）指定
+    vc.containerScale = 0.9;
     [self addChildViewController:vc];
     [self.containerView addSubview:vc.view];
 }

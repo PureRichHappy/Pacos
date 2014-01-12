@@ -13,6 +13,7 @@
 @property (nonatomic, strong) TSPacosTableView *tableView;
 @property (nonatomic, strong) NSArray *items;
 @property (nonatomic, assign) CGRect myFrame;
+@property (nonatomic, assign) float containerScale;
 
 - (id)initWithFrame:(CGRect)frame;
 
