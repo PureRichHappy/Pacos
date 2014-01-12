@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F3E8B4C18819CDA0002DA03 /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E8B4B18819CDA0002DA03 /* TSViewController.m */; };
+		1F6CE02A18826B1F00311BF6 /* TSPacosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02518826B1F00311BF6 /* TSPacosCell.m */; };
+		1F6CE02B18826B1F00311BF6 /* TSPacosTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02718826B1F00311BF6 /* TSPacosTableView.m */; };
+		1F6CE02C18826B1F00311BF6 /* TSPacosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CE02918826B1F00311BF6 /* TSPacosViewController.m */; };
 		3A2D4443187E8FA6004813A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4442187E8FA6004813A3 /* Foundation.framework */; };
 		3A2D4445187E8FA6004813A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4444187E8FA6004813A3 /* CoreGraphics.framework */; };
 		3A2D4447187E8FA6004813A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4446187E8FA6004813A3 /* UIKit.framework */; };
@@ -15,16 +18,12 @@
 		3A2D444F187E8FA6004813A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D444E187E8FA6004813A3 /* main.m */; };
 		3A2D4453187E8FA6004813A3 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D4452187E8FA6004813A3 /* TSAppDelegate.m */; };
 		3A2D4456187E8FA6004813A3 /* Pacos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D4454187E8FA6004813A3 /* Pacos.storyboard */; };
-		3A2D4459187E8FA6004813A3 /* TSPacosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D4458187E8FA6004813A3 /* TSPacosViewController.m */; };
 		3A2D445B187E8FA6004813A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D445A187E8FA6004813A3 /* Images.xcassets */; };
 		3A2D4462187E8FA6004813A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4461187E8FA6004813A3 /* XCTest.framework */; };
 		3A2D4463187E8FA6004813A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4442187E8FA6004813A3 /* Foundation.framework */; };
 		3A2D4464187E8FA6004813A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D4446187E8FA6004813A3 /* UIKit.framework */; };
 		3A2D446C187E8FA6004813A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D446A187E8FA6004813A3 /* InfoPlist.strings */; };
 		3A2D446E187E8FA6004813A3 /* PacosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D446D187E8FA6004813A3 /* PacosTests.m */; };
-		3A2D447C187E930E004813A3 /* TSPacosTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D447B187E930E004813A3 /* TSPacosTableView.m */; };
-		3A2D447E187E9AEE004813A3 /* TSPacosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D447D187E9AEE004813A3 /* TSPacosCell.xib */; };
-		3A2D4481187E9B5F004813A3 /* TSPacosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D4480187E9B5F004813A3 /* TSPacosCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +39,12 @@
 /* Begin PBXFileReference section */
 		1F3E8B4A18819CDA0002DA03 /* TSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewController.h; sourceTree = "<group>"; };
 		1F3E8B4B18819CDA0002DA03 /* TSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSViewController.m; sourceTree = "<group>"; };
+		1F6CE02418826B1F00311BF6 /* TSPacosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosCell.h; sourceTree = "<group>"; };
+		1F6CE02518826B1F00311BF6 /* TSPacosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosCell.m; sourceTree = "<group>"; };
+		1F6CE02618826B1F00311BF6 /* TSPacosTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosTableView.h; sourceTree = "<group>"; };
+		1F6CE02718826B1F00311BF6 /* TSPacosTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosTableView.m; sourceTree = "<group>"; };
+		1F6CE02818826B1F00311BF6 /* TSPacosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosViewController.h; sourceTree = "<group>"; };
+		1F6CE02918826B1F00311BF6 /* TSPacosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosViewController.m; sourceTree = "<group>"; };
 		3A2D443F187E8FA6004813A3 /* Pacos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2D4442187E8FA6004813A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A2D4444187E8FA6004813A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,19 +56,12 @@
 		3A2D4451187E8FA6004813A3 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		3A2D4452187E8FA6004813A3 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		3A2D4455187E8FA6004813A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Pacos.storyboard; sourceTree = "<group>"; };
-		3A2D4457187E8FA6004813A3 /* TSPacosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPacosViewController.h; sourceTree = "<group>"; };
-		3A2D4458187E8FA6004813A3 /* TSPacosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPacosViewController.m; sourceTree = "<group>"; };
 		3A2D445A187E8FA6004813A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A2D4460187E8FA6004813A3 /* PacosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2D4461187E8FA6004813A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3A2D4469187E8FA6004813A3 /* PacosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PacosTests-Info.plist"; sourceTree = "<group>"; };
 		3A2D446B187E8FA6004813A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A2D446D187E8FA6004813A3 /* PacosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacosTests.m; sourceTree = "<group>"; };
-		3A2D447A187E930E004813A3 /* TSPacosTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosTableView.h; sourceTree = "<group>"; };
-		3A2D447B187E930E004813A3 /* TSPacosTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosTableView.m; sourceTree = "<group>"; };
-		3A2D447D187E9AEE004813A3 /* TSPacosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSPacosCell.xib; sourceTree = "<group>"; };
-		3A2D447F187E9B5F004813A3 /* TSPacosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacosCell.h; sourceTree = "<group>"; };
-		3A2D4480187E9B5F004813A3 /* TSPacosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPacosCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6CE02318826B1F00311BF6 /* PacosTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1F6CE02418826B1F00311BF6 /* TSPacosCell.h */,
+				1F6CE02518826B1F00311BF6 /* TSPacosCell.m */,
+				1F6CE02618826B1F00311BF6 /* TSPacosTableView.h */,
+				1F6CE02718826B1F00311BF6 /* TSPacosTableView.m */,
+				1F6CE02818826B1F00311BF6 /* TSPacosViewController.h */,
+				1F6CE02918826B1F00311BF6 /* TSPacosViewController.m */,
+			);
+			path = PacosTableView;
+			sourceTree = "<group>";
+		};
 		3A2D4436187E8FA6004813A3 = {
 			isa = PBXGroup;
 			children = (
+				1F6CE02318826B1F00311BF6 /* PacosTableView */,
 				3A2D4448187E8FA6004813A3 /* Pacos */,
 				3A2D4467187E8FA6004813A3 /* PacosTests */,
 				3A2D4441187E8FA6004813A3 /* Frameworks */,
@@ -124,17 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				3A2D4451187E8FA6004813A3 /* TSAppDelegate.h */,
-				3A2D447D187E9AEE004813A3 /* TSPacosCell.xib */,
 				3A2D4452187E8FA6004813A3 /* TSAppDelegate.m */,
 				3A2D4454187E8FA6004813A3 /* Pacos.storyboard */,
-				3A2D4457187E8FA6004813A3 /* TSPacosViewController.h */,
-				3A2D4458187E8FA6004813A3 /* TSPacosViewController.m */,
 				3A2D445A187E8FA6004813A3 /* Images.xcassets */,
 				3A2D4449187E8FA6004813A3 /* Supporting Files */,
-				3A2D447A187E930E004813A3 /* TSPacosTableView.h */,
-				3A2D447B187E930E004813A3 /* TSPacosTableView.m */,
-				3A2D447F187E9B5F004813A3 /* TSPacosCell.h */,
-				3A2D4480187E9B5F004813A3 /* TSPacosCell.m */,
 				1F3E8B4A18819CDA0002DA03 /* TSViewController.h */,
 				1F3E8B4B18819CDA0002DA03 /* TSViewController.m */,
 			);
@@ -248,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2D445B187E8FA6004813A3 /* Images.xcassets in Resources */,
-				3A2D447E187E9AEE004813A3 /* TSPacosCell.xib in Resources */,
 				3A2D444D187E8FA6004813A3 /* InfoPlist.strings in Resources */,
 				3A2D4456187E8FA6004813A3 /* Pacos.storyboard in Resources */,
 			);
@@ -269,11 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2D4481187E9B5F004813A3 /* TSPacosCell.m in Sources */,
 				3A2D444F187E8FA6004813A3 /* main.m in Sources */,
-				3A2D447C187E930E004813A3 /* TSPacosTableView.m in Sources */,
 				3A2D4453187E8FA6004813A3 /* TSAppDelegate.m in Sources */,
-				3A2D4459187E8FA6004813A3 /* TSPacosViewController.m in Sources */,
+				1F6CE02C18826B1F00311BF6 /* TSPacosViewController.m in Sources */,
+				1F6CE02A18826B1F00311BF6 /* TSPacosCell.m in Sources */,
+				1F6CE02B18826B1F00311BF6 /* TSPacosTableView.m in Sources */,
 				1F3E8B4C18819CDA0002DA03 /* TSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
