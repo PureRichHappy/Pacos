@@ -45,7 +45,7 @@
 // 現在表示しているページを返すメソッド
 - (int)getCurrentPage
 {
-    int page = self.contentOffset.y / self.frame.size.height;
+    int page = self.contentOffset.y / self.frame.size.width;
     return page;
 }
 
